@@ -61,6 +61,13 @@ export const MakeAreaData = (data) => {
     MAP DATA
 */
 
+export const material = {
+  ambient: 1.05,
+  diffuse: .6,
+  shininess: 32,
+  specularColor: [51, 51, 51]
+};
+
 //Initial State of Map Configurations
 export const initialViewState = {
   latitude: 37.0902,
