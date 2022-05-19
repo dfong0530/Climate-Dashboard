@@ -2,11 +2,11 @@ Temp (Farenheit)
 
             Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
 
-NYC
-Los Angeles
-Chicago
-Miami
-Dallas
+New York
+California
+Illinois
+Florida
+Texas
 
 
 
@@ -14,11 +14,11 @@ Methane
 
             Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
 
-NYC
-Los Angeles
-Chicago
-Miami
-Dallas
+New York
+California
+Illinois
+Florida
+Texas
 
 
 
@@ -26,22 +26,22 @@ Ozone
 
             Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
 
-NYC
-Los Angeles
-Chicago
-Miami
-Dallas
+New York
+California
+Illinois
+Florida
+Texas
 
 
 Carbon Monoxide
 
             Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
 
-NYC
-Los Angeles
-Chicago
-Miami
-Dallas
+New York
+California
+Illinois
+Florida
+Texas
 
 
 
@@ -49,8 +49,8 @@ Nitrogen Dioxide
 
             Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
 
-NYC
-Los Angeles
-Chicago
-Miami
-Dallas
+New York
+California
+Illinois
+Florida
+Texas

@@ -1,36 +1,94 @@
 
+export const ParseAreaData = (stringData, action, states) => {
+    
+    const table = stringData.split(/\r?\n/);
 
-//Function Called after UpdateTemperatureData
-//When data pulled in from previous function the whole table is pulled in as a string.
-//This function parses the string and returns a list of ints. representing the data
-//That will be passed into the chart configurations.
-export const ParseTempData = (stringData) => {
+    const conversion = {
+        0: "New-York",
+        1: "California",
+        2: "Illinois",
+        3: "Florida",
+        4: "Texas"
+    }
 
-    const final = stringData.split(/\r?\n/)[0].split(" "); //List of strings of ints
+    let start;
+    switch(action){
+        case "temperature":
+            start = 0;
+            break;
 
-    for(let i = 0; i < final.length; i++){
+        case "methane":
+            start = 5;
+            break;
 
-        final[i] = parseFloat(final[i]);
+        case "ozone":
+            start = 10;
+            break;
 
+        case "carbon-monoxide":
+            start = 15;
+            break;
+
+        default:
+            start = 20;
+            break;
+    }
+
+    let final = [];
+
+    for(let i = start; i < start + 5; i++){
+
+        if(states.includes(conversion[i - start])){
+            let temp = table[i].split(" ");
+            final.push(temp.map(val => parseFloat(val)));
+        }
+        else{
+            final.push([]);
+        }
     }
 
     return final;
+
 }
 
 
-
-//Function Called after UpdateTemperatureData
+//Function Called after UpdateTableData
 //When data pulled in from previous function the whole table is pulled in as a string.
-//This function parses the string and returns a list of ints. representing the data
+//This function parses the string and returns a list<list<int>> representing the data
 //That will be passed into the chart configurations.
-export const ParseMethaneData = (stringData) => {
+export const ParseTableData = (stringData, action) => {
+
+    const table = stringData.split(/\r?\n/);
+
+
+    let start;
+    switch(action){
+        case "temperature":
+            start = 0;
+            break;
+
+        case "methane":
+            start = 5;
+            break;
+
+        case "ozone":
+            start = 10;
+            break;
+
+        case "carbon-monoxide":
+            start = 15;
+            break;
+
+        default:
+            start = 20;
+            break;
+    }
 
     let final = [];
-    let table = stringData.split(/\r?\n/);
 
-    for(let i = 5; i < 10; i++){
-        let data = table[i].split(" ");
-        final.push(parseFloat(data[0]));
+    for(let i = start; i < start + 5; i++){
+        let temp = table[i].split(" ");
+        final.push(temp.map(val => parseFloat(val)));
     }
 
     return final;

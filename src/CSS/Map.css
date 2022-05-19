@@ -1,0 +1,12 @@
+.map-wrapper {
+  position: relative;
+  width: 45vw;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.mapboxgl-ctrl,
+.mapboxgl-ctrl-attrib,
+.mapboxgl-compact {
+  display: none;
+}
