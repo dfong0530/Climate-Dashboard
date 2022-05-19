@@ -1,0 +1,1 @@
+{"features": [{"geometry": {"coordinates": [-79.37563664387042, 42.290125857392866], "type": "Point"}, "properties": {"timestamp": "2021-08-20T21:02:06.654000Z", "value": 1863.9862060546875}, "type": "Feature"}], "type": "FeatureCollection"}

@@ -1,0 +1,56 @@
+Temp (Farenheit)
+
+            Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
+
+NYC
+Los Angeles
+Chicago
+Miami
+Dallas
+
+
+
+Methane
+
+            Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
+
+NYC
+Los Angeles
+Chicago
+Miami
+Dallas
+
+
+
+Ozone
+
+            Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
+
+NYC
+Los Angeles
+Chicago
+Miami
+Dallas
+
+
+Carbon Monoxide
+
+            Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
+
+NYC
+Los Angeles
+Chicago
+Miami
+Dallas
+
+
+
+Nitrogen Dioxide
+
+            Jan   Feb   Mar   Apr   May   Jun   July   August  Sept   Oct   Nov   Dec
+
+NYC
+Los Angeles
+Chicago
+Miami
+Dallas

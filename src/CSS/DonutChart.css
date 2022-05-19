@@ -1,0 +1,70 @@
+.donut-title {
+  margin: 0.7rem;
+  text-align: center;
+  color: #7c7c7c;
+  font-size: 1rem;
+}
+
+.donut-container {
+  height: 78%;
+}
+
+.donut-label-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
+  margin: 1.3rem 0 0 0.5rem;
+}
+
+.right-label {
+  align-self: flex-start;
+}
+
+.label-text {
+  display: inline-block;
+  color: #c4c4c4;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.label-wrapper {
+  display: flex;
+}
+
+.blue-block {
+  background-color: #9dbbe8;
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+.green-block {
+  background-color: #8dd391;
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+.red-block {
+  background-color: #ff6969;
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+.orange-block {
+  background-color: #ff9900;
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+.purple-block {
+  background-color: #db00ff;
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
