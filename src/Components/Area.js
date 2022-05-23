@@ -47,7 +47,7 @@ const Area = ({ year, action, states }) => {
 
   return (
     <div className="area-chart">
-      <Line data={areaConfig} options={AreaOptions}/>
+      <Line id="canvas" data={areaConfig} options={AreaOptions}/>
     </div>
   );
 };

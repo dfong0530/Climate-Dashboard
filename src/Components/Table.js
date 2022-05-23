@@ -29,48 +29,48 @@ function TableChart({ year, action, states }) {
   return (
     <>
       <div className="table-wrapper">
-        <TableContainer component={Paper}>
+        <TableContainer sx={{height: "100%", backgroundColor: "#282a2f"}}component={Paper}>
           <Table className="tb" size="small" aria-label="a dense table">
             <TableHead>
               <TableRow className="table-row">
-                <TableCell>State</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} >State</TableCell>
                 {/* Table Headers */}
-                <TableCell align="center">January</TableCell>
-                <TableCell align="center">Febuary</TableCell>
-                <TableCell align="center">March</TableCell>
-                <TableCell align="center">April</TableCell>
-                <TableCell align="center">May</TableCell>
-                <TableCell align="center">June</TableCell>
-                <TableCell align="center">July</TableCell>
-                <TableCell align="center">August</TableCell>
-                <TableCell align="center">September</TableCell>
-                <TableCell align="center">October</TableCell>
-                <TableCell align="center">November</TableCell>
-                <TableCell align="center">December</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">January</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">Febuary</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">March</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">April</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">May</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">June</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">July</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">August</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">September</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">October</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">November</TableCell>
+                <TableCell sx={{color: "#fff", fontFamily: "Poppins", opacity: "0.9", borderBottom:"3px solid #1F2024"}} align="center">December</TableCell>
               </TableRow>
             </TableHead>
-            <TableBody>
+            <TableBody >
               {rows.map((row) => (
                 <TableRow
                   key={row.state}
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   className="table-row"
                 >
-                  <TableCell component="th" scope="row">
+                  <TableCell  sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "1", borderBottom:"2px solid #1F2024"}} component="th" scope="row">
                     {row.state}
                   </TableCell>
-                  <TableCell align="center">{row.jan}</TableCell>
-                  <TableCell align="center">{row.feb}</TableCell>
-                  <TableCell align="center">{row.mar}</TableCell>
-                  <TableCell align="center">{row.apr}</TableCell>
-                  <TableCell align="center">{row.may}</TableCell>
-                  <TableCell align="center">{row.jun}</TableCell>
-                  <TableCell align="center">{row.jul}</TableCell>
-                  <TableCell align="center">{row.aug}</TableCell>
-                  <TableCell align="center">{row.sept}</TableCell>
-                  <TableCell align="center">{row.oct}</TableCell>
-                  <TableCell align="center">{row.nov}</TableCell>
-                  <TableCell align="center">{row.dec}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.jan}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.feb}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.mar}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.apr}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.may}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.jun}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.jul}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.aug}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.sept}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.oct}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.nov}</TableCell>
+                  <TableCell sx={{color: "#BEBEBE", fontFamily: "Poppins", opacity: "0.7", borderBottom:"2px solid #1F2024"}} align="center">{row.dec}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

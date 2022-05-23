@@ -22,23 +22,15 @@ function Analytics(){
 
   return (
     <>
+    {/* <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates}/> */}
         <div className="main-analytics">
             <div className="area-graph">
-
+              <Area year={year} action={action} states={states}/> 
             </div>
             <div className="table-chart">
-
+              <TableChart year={year} action={action} states={states}/>
             </div>
         </div>
-      {/* <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates}/>
-      <div className="main">
-        <div className="area-section">
-          <Area year={year} action={action} states={states}/> 
-        </div>
-        <div className="table-section">
-          <TableChart year={year} action={action} states={states}/>
-        </div>
-      </div>  */}
       {/* <Map year={year} action={action} states={states}/> */}
     </>
   );

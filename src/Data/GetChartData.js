@@ -5,32 +5,39 @@
 
 */
 
+
 export const AreaOptions = {
     maintainAspectRatio: false,
     responsive: true,
     plugins: {
         legend: {
-            labels: {
-                color: "#fff"
-            }
+            display: false
         }
     },
 
     scales: {
         x: {
             grid: {
-                color: "#fff"
+                borderColor: "#F0F0F0",
+                color: "transparent"
             },
             ticks: {
-                color: "#fff"
+                color: "#A3A3A3",
+                font: {
+                    size: 10
+                }
             }
         },
         y: {
             grid: {
-                color: "#fff"
+                borderColor: "#F0F0F0",
+                color: "transparent"
             },
             ticks: {
-                color: "#fff"
+                color: "#A3A3A3",
+                font: {
+                    size: 10
+                }
             }
         }
     }
@@ -45,42 +52,57 @@ export const MakeAreaData = (data) => {
             {
                 label: "New York",
                 data: data[0],
-                fill: true,
-                backgroundColor: "rgba(39, 71, 229, 0.2)",
-                borderColor: "rgba(39, 71, 229, 1)",
-                tension: .40
+                fill: "start",
+                backgroundColor: "rgba(50, 115, 241, 0.3)",
+                borderColor: "rgba(50, 115, 241, .8)",
+                tension: .40,
+                pointStyle: "line",
+                pointRadius: 20,
+                pointBorderColor: "transparent"
             },
             {
                 label: "California",
                 data: data[1],
                 fill: true,
-                backgroundColor: "rgba(83, 142, 193, 0.2)",
-                borderColor: "rgba(83, 142, 193, 1)",
-                tension: .40
+                backgroundColor: "rgba(0, 255, 240, 0.3)",
+                borderColor: "rgba(0, 255, 240, .8)",
+                tension: .40,
+                pointStyle: "line",
+                pointRadius: 20,
+                pointBorderColor: "transparent"
             },
             {
                 label: "Illinois",
                 data: data[2],
                 fill: true,
-                backgroundColor: "rgba(135, 206, 250, 0.2)",
-                borderColor: "rgba(135, 206, 250, 1)",
-                tension: .40
+                backgroundColor: "rgba(219, 0, 255, 0.3)",
+                borderColor: "rgba(219, 0, 255, .8)",
+                tension: .40,
+                pointStyle: "line",
+                pointRadius: 20,
+                pointBorderColor: "transparent"
             },
             {
                 label: "Florida",
                 data: data[3],
                 fill: true,
-                backgroundColor: "rgba(39, 216, 229, 0.2)",
-                borderColor: "rgba(39, 216, 229, 1)",
-                tension: .40
+                backgroundColor: "rgba(0, 194, 255, 0.3)",
+                borderColor: "rgba(0, 194, 255, .8)",
+                tension: .40,
+                pointStyle: "line",
+                pointRadius: 20,
+                pointBorderColor: "transparent"
             },
             {
                 label: "Texas",
                 data: data[4],
                 fill: true,
-                backgroundColor: "rgba(39, 229, 197, 0.2)",
-                borderColor: "rgba(39, 229, 197, 1)",
-                tension: .40
+                backgroundColor: "rgba(158, 0, 255, 0.5)",
+                borderColor: "rgba(158, 0, 255, .8)",
+                tension: .40,
+                pointStyle: "line",
+                pointRadius: 20,
+                pointBorderColor: "transparent"
             }
         ]
     }

@@ -1,6 +1,12 @@
 .tb {
+  background-color: #282a2f;
 }
 
 .table-row {
-  height: 2.7rem;
+  height: 100%;
+  color: white;
+}
+.table-wrapper {
+  height: 90%;
+  margin: auto 0;
 }

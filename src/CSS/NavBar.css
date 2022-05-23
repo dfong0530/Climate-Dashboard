@@ -17,7 +17,7 @@
 .underline {
   width: 1rem;
   margin: auto;
-  border-bottom: 3px solid #3f86f0;
+  border-bottom: 3.5px solid #3f86f0;
   padding-bottom: 7px;
 }
 
@@ -35,7 +35,7 @@
 .nav-left a,
 span {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.9);
   opacity: 0.9;
   font-style: normal;
