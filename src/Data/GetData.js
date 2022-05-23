@@ -31,15 +31,16 @@ export const UpdateTableData = async (year, action) => {
 //for the map.
 export const GetMapData = async (year, month, action, states) => {
 
+    let tempAction = action === "carbon-monoxide" ? "carbonmonoxide" : action;
 
-    let file = require(`./MapDB/${year}/${action}/${year}-${month}-${states[0]}-${action}.txt`);
+    let file = require(`./MapDB/${year}/${tempAction}/${year}-${month}-${states[0]}-${tempAction}.txt`);
     
     let data;
     let res = await axios.get(file);
     let configObj = await res.data;
 
     for(let i = 1; i < states.length; i++){
-        file = require(`./MapDB/${year}/${action}/${year}-${month}-${states[i]}-${action}.txt`);
+        file = require(`./MapDB/${year}/${tempAction}/${year}-${month}-${states[i]}-${tempAction}.txt`);
         res = await axios.get(file);
 
         data = await res.data;

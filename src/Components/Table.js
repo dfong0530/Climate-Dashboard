@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from'react';
+import "../CSS/TableChart.css";
+import { UpdateTableData } from '../Data/GetData';
+import { initialTableData } from '../Data/GetChartData';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -6,15 +9,10 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import "../CSS/TableChart.css";
-import { UpdateTableData } from '../Data/GetData';
-import { initialTableData } from '../Data/GetChartData';
 
 
+function TableChart({ year, action, states }) {
 
-function TableChart({ year, action }) {
-
-  //Table Configurations
   const [rows, setRows] = useState(initialTableData());
 
   useEffect(() => {
@@ -28,15 +26,14 @@ function TableChart({ year, action }) {
 
   }, [year, action])
 
-
   return (
     <>
       <div className="table-wrapper">
         <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table className="tb" size="small" aria-label="a dense table">
             <TableHead>
-              <TableRow>
-                <TableCell>City</TableCell>
+              <TableRow className="table-row">
+                <TableCell>State</TableCell>
                 {/* Table Headers */}
                 <TableCell align="center">January</TableCell>
                 <TableCell align="center">Febuary</TableCell>
@@ -57,6 +54,7 @@ function TableChart({ year, action }) {
                 <TableRow
                   key={row.state}
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                  className="table-row"
                 >
                   <TableCell component="th" scope="row">
                     {row.state}

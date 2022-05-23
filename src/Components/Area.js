@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Line } from "react-chartjs-2";
 import { UpdateAreaData } from '../Data/GetData';
-import { MakeAreaData } from '../Data/GetChartData';
+import { MakeAreaData, AreaOptions } from '../Data/GetChartData';
 import "../CSS/Area.css";
 
 
@@ -47,7 +47,7 @@ const Area = ({ year, action, states }) => {
 
   return (
     <div className="area-chart">
-      <Line data={areaConfig} />
+      <Line data={areaConfig} options={AreaOptions}/>
     </div>
   );
 };

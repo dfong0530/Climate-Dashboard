@@ -5,6 +5,37 @@
 
 */
 
+export const AreaOptions = {
+    maintainAspectRatio: false,
+    responsive: true,
+    plugins: {
+        legend: {
+            labels: {
+                color: "#fff"
+            }
+        }
+    },
+
+    scales: {
+        x: {
+            grid: {
+                color: "#fff"
+            },
+            ticks: {
+                color: "#fff"
+            }
+        },
+        y: {
+            grid: {
+                color: "#fff"
+            },
+            ticks: {
+                color: "#fff"
+            }
+        }
+    }
+    
+};
 
 export const MakeAreaData = (data) => {
 
@@ -72,7 +103,7 @@ export const material = {
 export const initialViewState = {
   latitude: 37.0902,
   longitude: -95.7129,
-  zoom: 2.4
+  zoom: 3.2
 }
 
 

@@ -1,8 +1,7 @@
 .map-wrapper {
-  position: relative;
-  width: 45vw;
-  height: 40vh;
-  margin: 0 auto;
+  position: absolute;
+  width: 100vw;
+  height: 88vh;
 }
 
 .mapboxgl-ctrl,
