@@ -27,7 +27,6 @@ const Filter = ({ year, setYear, action, setAction, states, setStates, setShowFi
             setTempStates(tempStates.concat([e.target.value]));
         }
 
-
         let state = document.getElementById(e.target.id);
 
         if(state.classList.contains("active-btn")){
@@ -57,19 +56,19 @@ const Filter = ({ year, setYear, action, setAction, states, setStates, setShowFi
                     </select>
                     <div className="grid-btns">
                         <div className="nyc-btn-grid">
-                            <input id="New-York-filter" className="state-filter-btn active-btn" type="button" value="New-York" onClick={stateHandleClick}/>
+                            <input id="New-York-filter" className={`state-filter-btn ${states.includes("New-York") ? "active-btn" : ""}`} type="button" value="New-York" onClick={stateHandleClick}/>
                         </div>
                         <div className="cali-btn-grid">
-                            <input id="California-filter" className="state-filter-btn active-btn" type="button" value="California" onClick={stateHandleClick}/>
+                            <input id="California-filter" className={`state-filter-btn ${states.includes("California") ? "active-btn" : ""}`} type="button" value="California" onClick={stateHandleClick}/>
                         </div>
                         <div className="texas-btn-grid">
-                            <input id="Texas-filter" className="state-filter-btn active-btn" type="button" value="Texas" onClick={stateHandleClick}/>
+                            <input id="Texas-filter" className={`state-filter-btn ${states.includes("Texas") ? "active-btn" : ""}`} type="button" value="Texas" onClick={stateHandleClick}/>
                         </div>
                         <div className="illinois-btn-grid">
-                            <input id="Illinois-filter" className="state-filter-btn active-btn" type="button" value="Illinois" onClick={stateHandleClick}/>
+                            <input id="Illinois-filter" className={`state-filter-btn ${states.includes("Illinois") ? "active-btn" : ""}`} type="button" value="Illinois" onClick={stateHandleClick}/>
                         </div>
                         <div className="florida-btn-grid">
-                            <input id="Florida-filter" className="state-filter-btn active-btn" type="button" value="Florida" onClick={stateHandleClick}/>
+                            <input id="Florida-filter" className={`state-filter-btn ${states.includes("Florida") ? "active-btn" : ""}`} type="button" value="Florida" onClick={stateHandleClick}/>
                         </div>
                     </div>
                     <button className="submit-filter">Submit</button>
