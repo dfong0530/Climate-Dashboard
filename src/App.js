@@ -31,7 +31,7 @@ function App(){
         <Route path="/Overview" element={<Overview />} />
       </Routes>
       { showFiltler && <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates} setShowFilter={setShowFilter} /> }
-      { showFiltler && <div id="overlay"></div> }
+      { showFiltler && <div onClick={() => setShowFilter(false)} id="overlay"></div> }
     </BrowserRouter>
   );
 }

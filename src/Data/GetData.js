@@ -31,6 +31,8 @@ export const UpdateTableData = async (year, action, states) => {
 //for the map.
 export const GetMapData = async (year, month, action, states) => {
 
+    if(states.length === 0 || year === 2018 || action === "temperature") return {};
+
     let tempAction = action === "carbon-monoxide" ? "carbonmonoxide" : action;
 
     let file = require(`./MapDB/${year}/${tempAction}/${year}-${month}-${states[0]}-${tempAction}.txt`);

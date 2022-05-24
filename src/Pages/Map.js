@@ -65,7 +65,7 @@ function MapChart({ year, action, states }) {
 
     //Only update the map if the year isn't 2018 and the action isn't temperature.
     //The API did not expose an endpoint to retrive this information.
-    year !== 2018 && action !== "temperature" && update();
+    update();
 
   }, [year, month, action, states])
 
