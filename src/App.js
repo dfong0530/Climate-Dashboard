@@ -24,14 +24,15 @@ function App(){
 
   return (
     <BrowserRouter>
-      <NavBar setShowFilter={setShowFilter} />
+      {/* <NavBar setShowFilter={setShowFilter} />
       <Routes>
         <Route path="/" element={<Analytics year={year} action={action} states={states} />} />
         <Route path="/Map_Viewer" element={<Map year={year} action={action} states={states} />} />
         <Route path="/Overview" element={<Overview />} />
       </Routes>
       { showFiltler && <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates} setShowFilter={setShowFilter} /> }
-      { showFiltler && <div onClick={() => setShowFilter(false)} id="overlay"></div> }
+      { showFiltler && <div onClick={() => setShowFilter(false)} id="overlay"></div> } */}
+      <h1>Dfong is awesome</h1>
     </BrowserRouter>
   );
 }
