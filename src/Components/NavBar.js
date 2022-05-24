@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../CSS/NavBar.css";
 
-const NavBar = () => {
+const NavBar = ({ setShowFilter }) => {
 
     const handleClick = (e) => {
         
@@ -44,7 +44,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="nav-right">
-                    <button className="filter-btn"><span className="plus">+</span>Filter</button>
+                    <button className="filter-btn" onClick={() => setShowFilter(true)}><span className="plus">+</span>Filter</button>
                 </div>
             </div>
         </>

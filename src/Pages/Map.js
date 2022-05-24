@@ -5,6 +5,7 @@ import {HexagonLayer} from '@deck.gl/aggregation-layers';
 import { GetMapData } from '../Data/GetData';
 import { initialViewState, colorRange, material } from '../Data/GetChartData';
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core';
+import MonthFilter from "../Components/MonthFilter";
 import "../CSS/Map.css";
 
 
@@ -51,7 +52,7 @@ function MapChart({ year, action, states }) {
 
   //dataObj - MapConfig && month-Filters the data by month
   const [dataObj, setDataObj] = useState({"container": []});
-  const [month, setMonth] = useState("05");
+  const [month, setMonth] = useState("01");
 
 
   useEffect(() => {
@@ -126,6 +127,7 @@ function MapChart({ year, action, states }) {
           mapboxAccessToken={"pk.eyJ1IjoiZGZvbmcwNTMwIiwiYSI6ImNsMnphNGRjcjA0eWQzY2xlc2syNXkwNjEifQ.RLxd0ABfkjdM_XEyGKgRUg"} />
         </DeckGL>
       </div>
+      <MonthFilter month={month} setMonth={setMonth}/>
     </>
   )
 }

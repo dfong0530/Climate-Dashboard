@@ -24,13 +24,14 @@ function App(){
 
   return (
     <BrowserRouter>
-      <NavBar />
+      <NavBar setShowFilter={setShowFilter} />
       <Routes>
         <Route path="/" element={<Analytics year={year} action={action} states={states} />} />
         <Route path="/Map_Viewer" element={<Map year={year} action={action} states={states} />} />
         <Route path="/Overview" element={<Overview />} />
       </Routes>
-      { showFiltler && <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates} /> }
+      { showFiltler && <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates} setShowFilter={setShowFilter} /> }
+      { showFiltler && <div id="overlay"></div> }
     </BrowserRouter>
   );
 }
