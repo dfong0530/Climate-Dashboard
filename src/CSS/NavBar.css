@@ -32,14 +32,18 @@
   margin-right: 10px;
 }
 
-.nav-left a,
-span {
+.nav-link,
+.nav-left span {
   text-decoration: none;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.9);
   opacity: 0.9;
   font-style: normal;
   font-weight: 500;
+}
+
+.nav-link:hover {
+  filter: brightness(90%);
 }
 
 .filter-btn {
@@ -52,6 +56,10 @@ span {
   color: #fff;
   position: relative;
   padding-left: 25px;
+}
+
+.filter-btn:hover {
+  filter: brightness(90%);
 }
 
 .plus {

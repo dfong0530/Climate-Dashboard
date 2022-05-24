@@ -163,13 +163,17 @@ export const initialTableData = () => {
 };
 
 //This function takes in data fetched and creates a table. From the data.
-export const MakeTableData = (data) => {
+export const MakeTableData = (data, avaliableStates) => {
     let ret = [];
-    let states = ["New York", "California", "Illinois", "Florida", "Texas"];
-
+    let states = ["New-York", "California", "Illinois", "Florida", "Texas"];
+    
     for(let i = 0; i < data.length; i++){
-        ret.push(createData(states[i], data[i][0], data[i][1], data[i][2], data[i][3], data[i][4], data[i][5],
-            data[i][6], data[i][7], data[i][8], data[i][9], data[i][10], data[i][11]));
+
+        if(avaliableStates.includes(states[i])){
+            ret.push(createData(states[i], data[i][0], data[i][1], data[i][2], data[i][3], data[i][4], data[i][5],
+                data[i][6], data[i][7], data[i][8], data[i][9], data[i][10], data[i][11]));
+        }
+
     }
 
     return ret;

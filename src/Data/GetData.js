@@ -17,14 +17,14 @@ export const UpdateAreaData = async (year, action, states) => {
 
 //Updates the Table. Fetches the data from db folder and calls MakeTableData which takes in the 
 //data and returns the configuration object for the table.
-export const UpdateTableData = async (year, action) => {
+export const UpdateTableData = async (year, action, states) => {
 
     const file = require(`./db/${year}-table.txt`);
 
     const res = await axios.get(file);
     const data = await res.data;
 
-    return MakeTableData(ParseTableData(data, action));
+    return MakeTableData(ParseTableData(data, action), states);
 
 }
 //This function Gets the Data for the map and returns the data that will be passed into the configurations

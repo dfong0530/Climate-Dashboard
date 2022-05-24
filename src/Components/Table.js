@@ -18,18 +18,18 @@ function TableChart({ year, action, states }) {
   useEffect(() => {
 
     const update = async () => {
-      const res = await UpdateTableData(year, action);
+      const res = await UpdateTableData(year, action, states);
       setRows(res);
     };
     
     update();
 
-  }, [year, action])
+  }, [year, action, states])
 
   return (
     <>
       <div className="table-wrapper">
-        <TableContainer sx={{height: "100%", backgroundColor: "#282a2f"}}component={Paper}>
+        <TableContainer sx={{height: "100%", backgroundColor: "#282a2f", borderRadius: "50px"}}component={Paper}>
           <Table className="tb" size="small" aria-label="a dense table">
             <TableHead>
               <TableRow className="table-row">

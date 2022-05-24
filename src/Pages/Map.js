@@ -57,10 +57,6 @@ function MapChart({ year, action, states }) {
   useEffect(() => {
 
     const update = async() => {
-      
-
-      console.log(year);
-      console.log(states);
 
       const res = await GetMapData(year, month, action, states);
       setDataObj(res);

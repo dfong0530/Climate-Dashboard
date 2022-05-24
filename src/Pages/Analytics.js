@@ -6,23 +6,11 @@ import Filter from "../Components/Filter";
 import NavBar from "../Components/NavBar";
 import "../CSS/Analytics.css";
 
-function Analytics(){
-
-  /* These are the main global state-variables that control the graphs
-  Action refers to the type of global warming varibale
-
-  There is one more main state variables: (month) that is located inside of the map component
-
-  */
-  const [year, setYear] = useState(2019);
-  const [action, setAction] = useState("methane");
-  const [states, setStates] = useState(["California", "New-York", "Texas", "Illinois", "Florida"]);
-
-  const [showFitler, setShowFilter] = useState(false);
+function Analytics({ year, action, states }){
 
   return (
     <>
-    {/* <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates}/> */}
+        {/* <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates}/> */}
         <div className="main-analytics">
             <div className="area-graph">
               <Area year={year} action={action} states={states}/> 
