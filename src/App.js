@@ -6,7 +6,12 @@ import Overview from "./Pages/Overview";
 import Filter from "./Components/Filter"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./App.css";
+import MapGL from "mapbox-gl";
 
+
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+MapGL.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 function App(){
 
   /*  These are the main global state-variables that control the graphs

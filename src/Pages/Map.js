@@ -8,8 +8,6 @@ import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core';
 import MonthFilter from "../Components/MonthFilter";
 import "../CSS/Map.css";
 
-
-
 const ambientLight = new AmbientLight({
   color: [255, 255, 255],
   intensity: 1.0
@@ -124,7 +122,7 @@ function MapChart({ year, action, states }) {
             zoom: 14
           }}
           mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json" //Paste in browser and click on first link to view different react-map-gl styles
-          mapboxAccessToken={"pk.eyJ1IjoiZGZvbmcwNTMwIiwiYSI6ImNsMnphNGRjcjA0eWQzY2xlc2syNXkwNjEifQ.RLxd0ABfkjdM_XEyGKgRUg"} />
+          mapboxAccessToken={"sk.eyJ1IjoiZGZvbmcwNTMwIiwiYSI6ImNsM2wxZG1mbDAweDczYnBmcmdhdTkzaHAifQ.k4PEzZVc4D7Xa8flD1SyoQ"} />
         </DeckGL>
       </div>
       <MonthFilter month={month} setMonth={setMonth}/>
