@@ -34,7 +34,7 @@ The data was retrieved from multiple climate API's. I then pulled the data from 
 and cached the results in local txt files --> /src/Data/db (used for area and table)
 and /src/Data/MapDB (used for map).
 
-###Disclaimer
+### Disclaimer
 
 All the data was pulled from external API's. However, some of the data appears to be inaccurate. My goal of this project was to demonstrate my skills in React. Because of that I didn't look super in depth in the accuracy of the data.
 
