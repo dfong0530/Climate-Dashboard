@@ -34,7 +34,7 @@ const NavBar = ({ setShowFilter }) => {
 
     return (
         <>
-            <div className="nav-bar">
+            <div className="nav-bar">                
                 <div className="nav-left">
                     <h1 className="dash-name">Climate Dashboard</h1>
                     <ul>
