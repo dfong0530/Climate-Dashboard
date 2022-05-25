@@ -34,9 +34,9 @@ const NavBar = ({ setShowFilter }) => {
 
     return (
         <>
-            <div className="nav-bar">                
+            <div className="nav-bar">     
+                <h1 className="dash-name">Climate Dashboard</h1>           
                 <div className="nav-left">
-                    <h1 className="dash-name">Climate Dashboard</h1>
                     <ul>
                         <li><Link to="/Overview" id="overview-link" className="nav-link" onClick={handleClick}>Overview</Link></li>
                         <li><span>|    </span><Link to="/" id="analytics-link" className="nav-link underline" onClick={handleClick}>Analytics</Link></li>

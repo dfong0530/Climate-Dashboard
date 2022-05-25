@@ -24,6 +24,8 @@
 .nav-left {
   display: flex;
   align-items: center;
+  position: absolute;
+  left: 23%;
 }
 
 .nav-left li {
@@ -68,4 +70,66 @@
   position: absolute;
   bottom: -5.5px;
   left: 12px;
+}
+
+@media (max-width: 1250px) {
+  .nav-left {
+    left: 35%;
+  }
+}
+
+@media (max-width: 780px) {
+  .dash-name {
+    font-size: 22px;
+  }
+
+  .nav-left {
+    left: 40%;
+  }
+
+  .nav-link,
+  .nav-left span {
+    font-size: 14px;
+  }
+
+  .filter-btn {
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 14px;
+  }
+
+  .plus {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 630px) {
+  .nav-bar {
+    padding-bottom: 8%;
+  }
+
+  .nav-left {
+    position: absolute;
+    top: 5.3%;
+    left: 2.6%;
+  }
+
+  .dash-name {
+    font-size: 17px;
+  }
+
+  .nav-link,
+  .nav-left span {
+    font-size: 12px;
+  }
+
+  .filter-btn {
+    width: 4.3rem;
+    height: 1.2rem;
+    font-size: 12px;
+  }
+
+  .plus {
+    font-size: 20px;
+  }
 }
