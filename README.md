@@ -1,8 +1,8 @@
 # Climate Dashboard
 
-https://user-images.githubusercontent.com/68403991/163909529-bee8f58a-6e7a-48cf-a4c8-2b49778c5adb.MOV
+https://user-images.githubusercontent.com/68403991/170187370-b212f324-9834-4ff9-91e6-a95d934abad5.mov
 
-### Link: https://climate-dashboard.netlify.app/
+### Link: https://temp-dashboard.netlify.app
 
 ### About
 
