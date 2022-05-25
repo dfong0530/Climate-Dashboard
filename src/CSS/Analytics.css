@@ -16,7 +16,7 @@
 }
 
 .area-graph {
-  margin-top: 3%;
+  margin-top: 2.5%;
   width: 100%;
   height: 45%;
   background-color: #282a2f;
@@ -40,5 +40,12 @@
 @media (max-width: 630px) {
   .table-chart {
     margin-top: 9%;
+  }
+
+  .area-graph {
+    margin-top: 8%;
+  }
+  .table-chart {
+    margin-top: 8%;
   }
 }

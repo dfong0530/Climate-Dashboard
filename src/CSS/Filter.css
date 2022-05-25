@@ -91,3 +91,37 @@
 .close-icon:hover {
   filter: brightness(90%);
 }
+
+@media (max-width: 1250px) {
+  .filter-box {
+    width: 40%;
+  }
+}
+
+@media (max-width: 780px) {
+  .filter-box {
+    width: 60%;
+  }
+  .close-icon {
+    top: 20px;
+    right: 10%;
+  }
+}
+
+@media (max-width: 630px) {
+  .filter-box {
+    width: 80%;
+    height: 57%;
+    padding-top: 6%;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid-btns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter-box {
+    width: 83%;
+    height: 65%;
+  }
+}
