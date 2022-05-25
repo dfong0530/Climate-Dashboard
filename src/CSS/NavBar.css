@@ -105,13 +105,14 @@
 
 @media (max-width: 630px) {
   .nav-bar {
+    padding: 3% 5%;
     padding-bottom: 8%;
   }
 
   .nav-left {
     position: absolute;
-    top: 5.3%;
-    left: 2.6%;
+    top: 6%;
+    left: 5.1%;
   }
 
   .dash-name {
@@ -124,12 +125,6 @@
   }
 
   .filter-btn {
-    width: 4.3rem;
-    height: 1.2rem;
-    font-size: 12px;
-  }
-
-  .plus {
-    font-size: 20px;
+    margin-top: 15%;
   }
 }
