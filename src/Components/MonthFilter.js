@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/MonthFilter.css";
 
+//This is the drop down menu in the map view tab.
 const MonthFilter = ({ month, setMonth }) => {
 
     return (

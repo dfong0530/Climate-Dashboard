@@ -7,10 +7,9 @@ import NavBar from "../Components/NavBar";
 import "../CSS/Analytics.css";
 
 function Analytics({ year, action, states }){
-
+  //Main page --> Analytics page.
   return (
     <>
-        {/* <Filter year={year} setYear={setYear} action={action} setAction={setAction} states={states} setStates={setStates}/> */}
         <div className="main-analytics">
             <div className="area-graph">
               <Area year={year} action={action} states={states}/> 
@@ -19,7 +18,6 @@ function Analytics({ year, action, states }){
               <TableChart year={year} action={action} states={states}/>
             </div>
         </div>
-      {/* <Map year={year} action={action} states={states}/> */}
     </>
   );
 }

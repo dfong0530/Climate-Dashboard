@@ -26,7 +26,7 @@ function App(){
 
   const [showFiltler, setShowFilter] = useState(false);
 
-
+  //React router for pages.
   return (
     <BrowserRouter>
       <NavBar setShowFilter={setShowFilter} />

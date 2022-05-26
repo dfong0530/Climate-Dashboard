@@ -4,6 +4,9 @@ import "../CSS/NavBar.css";
 
 const NavBar = ({ setShowFilter }) => {
 
+    //Logic in order to determine where the blue underline under the page link goes.
+    //Which ever elemennt has the underline class, that link will have the underline
+    //under the link.
     const handleClick = (e) => {
         
         let overview = document.getElementById("overview-link");

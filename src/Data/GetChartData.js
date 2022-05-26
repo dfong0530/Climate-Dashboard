@@ -5,7 +5,7 @@
 
 */
 
-
+//Area Option config for graph
 export const AreaOptions = {
     maintainAspectRatio: false,
     responsive: true,
@@ -44,6 +44,8 @@ export const AreaOptions = {
     
 };
 
+//Takes in a 2-d list of ints. Each sub list has 12 numbers corresponding to the values of the action
+//in a given year. 12 for each month.
 export const MakeAreaData = (data) => {
 
     return {
@@ -112,6 +114,8 @@ export const MakeAreaData = (data) => {
 
 /*
     MAP DATA
+
+    map configurations.
 */
 
 export const material = {

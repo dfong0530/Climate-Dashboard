@@ -24,6 +24,8 @@ Nitrogen Dioxide: ppb (micrograms per cubic meter)
 
 Carbon Monoxide: ppm
 
+---
+
 Area Chart - Displays average values of the action (methane, temperature...) based on selected per year.
 
 Table - Displays raw data of the Area Chart.

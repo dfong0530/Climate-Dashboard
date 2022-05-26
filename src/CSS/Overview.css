@@ -1,3 +1,50 @@
-h1 {
+.overview-wrapper {
+  width: 93%;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.overview-tit {
   color: #fff;
+  font-weight: 500;
+  font-style: "Poppins";
+  margin-bottom: 13px;
+}
+
+.overview-more,
+.overview-more a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.9;
+  font-style: "Poppins";
+  font-weight: 400;
+  margin-bottom: 15px;
+  width: 90%;
+  line-height: 30px;
+}
+
+.overview-more a:hover {
+  opacity: 1;
+}
+
+.hr {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.overview-more strong {
+  color: #fff;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 630px) {
+  .hr,
+  .overview-more {
+    width: 100%;
+  }
+
+  .overview-wrapper {
+    width: 80%;
+  }
 }

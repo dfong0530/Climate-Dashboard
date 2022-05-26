@@ -4,6 +4,10 @@ import "../CSS/Filter.css";
 
 const Filter = ({ year, setYear, action, setAction, states, setStates, setShowFilter }) => {
 
+    //temp state variables that correspond to year, action, and states variables.
+    //When the form is changed the temp variables will be udpated.
+    //When the form is submitted the corresponding global variables will be updated with the temp variables.
+
     const [tempYear, setTempYear] = useState(year);
     const [tempAction, setTempAction] = useState(action);
     const [tempStates, setTempStates] = useState(states);

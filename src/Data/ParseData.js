@@ -1,4 +1,8 @@
 
+//stringData is a raw string representing the table fromt the txt file in ./db/...
+//This function parses the stringTable and converts it into a 2-d list of ints.
+//Each sub list has 12 int corresponding to the values for the months of that <year .
+//Each sub list represents the data for an individual state.
 export const ParseAreaData = (stringData, action, states) => {
     
     const table = stringData.split(/\r?\n/);

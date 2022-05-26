@@ -35,6 +35,7 @@ const Area = ({ year, action, states }) => {
 
     useEffect(() => {
 
+      //UpdateAreaData returns valid configurations for area chart
         const update = async() => {
             const res = await UpdateAreaData(year, action, states);
             setAreaConfig(res);

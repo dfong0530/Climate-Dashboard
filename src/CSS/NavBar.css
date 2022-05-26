@@ -9,7 +9,7 @@
 .dash-name {
   color: #fff;
   font-weight: 500;
-  font-style: normal;
+  font-style: "Poppins";
   font-size: 24px;
   margin-right: 3rem;
 }
@@ -40,7 +40,7 @@
   font-size: 18px;
   color: rgba(255, 255, 255, 0.9);
   opacity: 0.9;
-  font-style: normal;
+  font-style: "Poppins";
   font-weight: 500;
 }
 

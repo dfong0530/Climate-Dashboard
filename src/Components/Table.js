@@ -16,7 +16,7 @@ function TableChart({ year, action, states }) {
   const [rows, setRows] = useState(initialTableData());
 
   useEffect(() => {
-
+    //UpdateTableData returns a list of objects. This will be used for the rows in the table.
     const update = async () => {
       const res = await UpdateTableData(year, action, states);
       setRows(res);
