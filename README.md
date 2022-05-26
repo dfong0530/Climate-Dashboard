@@ -2,7 +2,7 @@
 
 https://user-images.githubusercontent.com/68403991/170187370-b212f324-9834-4ff9-91e6-a95d934abad5.mov
 
-### Link: https://temp-dashboard.netlify.app
+### Link: https://climate-dashboardv2.netlify.app
 
 ### About
 
@@ -15,9 +15,13 @@ The data is filtered by year, action, states, and month.
 ### Understanding the Data
 
 Temperature: Celsius
+
 Methane: parts per million (mass/per unit volume)
+
 Ozone: dobson units
+
 Nitrogen Dioxide: ppb (micrograms per cubic meter)
+
 Carbon Monoxide: ppm
 
 Area Chart - Displays average values of the action (methane, temperature...) based on selected per year.
