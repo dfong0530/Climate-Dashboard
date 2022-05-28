@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TableChart from "../Components/Table";
-import Map from "./Map";
 import Area from "../Components/Area";
-import Filter from "../Components/Filter";
-import NavBar from "../Components/NavBar";
 import "../CSS/Analytics.css";
 
 function Analytics({ year, action, states }){
