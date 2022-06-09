@@ -2,7 +2,7 @@
 
 https://user-images.githubusercontent.com/68403991/170187370-b212f324-9834-4ff9-91e6-a95d934abad5.mov
 
-### Link: https://climate-dashboardv2.netlify.app
+### Link: https://climate-dashboard.netlify.app/
 
 ### About
 
